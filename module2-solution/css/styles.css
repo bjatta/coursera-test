@@ -10,14 +10,15 @@ h1 {
 	text-align: center;
 	padding: 1em;
 }
-p.menu-item-name{
-text-align: right;
-}
 
 div.row {
 	margin-left: -0.1em;
 	margin-right: -0.1em;
 	width: 100%;
+}
+
+ul {
+	list-style-type: none;
 }
 
 div.menu-item-name {
@@ -31,9 +32,10 @@ div.menu-item-name {
 	background-color: #336699;
 	display: inline-block;
 	font-weight: bold;
+	font-size: 1.2em;
 }
 
-div.column {
+div.column,li.column {
 	float: left;
 	border: 0;
 	padding: 0.5em;
@@ -48,6 +50,19 @@ p.recipe {
 	clear: right;
 	padding: 0.2em;
 }
+
+li:nth-child(1) div.menu-item-name{
+	background-color: red;
+}
+
+li:nth-child(2) div.menu-item-name{
+	background-color: #369;
+}
+
+li:nth-child(3) div.menu-item-name{
+	background-color: yellow;
+}
+
 @media (min-width: 992px) {
 div.col-lg-4 {width: 33.33%;}
 }
@@ -59,4 +74,7 @@ div.col-md-12 {width: 100%;}
   
  @media (max-width: 767px) {
 div.col-sm-12 {width: 100%;}
+h1 {
+	font-size: .9em;
+}
 }
