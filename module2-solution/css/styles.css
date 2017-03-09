@@ -1,5 +1,5 @@
-
 * {
+	--main-padding: 1.5em;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -12,8 +12,8 @@ h1 {
 }
 
 div.row {
-	margin-left: -0.1em;
-	margin-right: -0.1em;
+	margin-left: var(--main-padding) * -1;
+	margin-right: var(--main-padding) * -1;
 	width: 100%;
 }
 
@@ -21,37 +21,41 @@ ul {
 	list-style-type: none;
 }
 
-p.menu-item-name {
+div.menu-item-name {
 	margin: 0.5em;
 }
 
-div.menu-item-name {
-/* 	float: right; */
+p.recipe {
+	margin-top: var(--main-padding);
+	padding: var(--main-padding);
+}
+
+p.menu-item-name {
 	position: absolute;
-	top: 0.5em;
-    right: 0.5em;
+	top:0;
+	right: 0;
 	border: 2px solid black;
 	border-top: 0;
 	border-right: 0;
 	text-align: center;
-	padding: 0.2em;
 	opacity: 0.7;
-	background-color: #336699;
 	display: inline-block;
 	font-weight: bold;
 	font-size: 1.2em;
+	padding: .2em;
 }
 
 div.column {
- 	position: relative; 
 	float: left;
 	border: 0;
-	padding: 0.5em;
+	padding: var(--main-padding);
 }
 
 div.inner-border {
+ 	position: relative; 
 	border: 2px solid black;	
 	background: darkgray;
+	padding: var(--main-padding);
 }
 
 p.recipe {
@@ -59,15 +63,15 @@ p.recipe {
 	padding: 0.2em;
 }
 
-li:nth-child(1) div.menu-item-name{
+li:nth-child(1) p.menu-item-name{
 	background-color: DarkSalmon;
 }
 
-li:nth-child(2) div.menu-item-name{
+li:nth-child(2) p.menu-item-name{
 	background-color: lightcoral;
 }
 
-li:nth-child(3) div.menu-item-name{
+li:nth-child(3) p.menu-item-name{
 	background-color: Cornsilk;
 }
 
