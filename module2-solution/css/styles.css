@@ -21,8 +21,15 @@ ul {
 	list-style-type: none;
 }
 
+p.menu-item-name {
+	margin: 0.5em;
+}
+
 div.menu-item-name {
-	float: right;
+/* 	float: right; */
+	position: absolute;
+	top: 0.5em;
+    right: 0.5em;
 	border: 2px solid black;
 	border-top: 0;
 	border-right: 0;
@@ -36,6 +43,7 @@ div.menu-item-name {
 }
 
 div.column {
+ 	position: relative; 
 	float: left;
 	border: 0;
 	padding: 0.5em;
