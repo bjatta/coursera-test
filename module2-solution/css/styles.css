@@ -1,5 +1,5 @@
 * {
-	--main-padding: 1.5em;
+	--main-padding: 1em;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -12,8 +12,6 @@ h1 {
 }
 
 div.row {
-	margin-left: var(--main-padding) * -1;
-	margin-right: var(--main-padding) * -1;
 	width: 100%;
 }
 
@@ -23,11 +21,6 @@ ul {
 
 div.menu-item-name {
 	margin: 0.5em;
-}
-
-p.recipe {
-	margin-top: var(--main-padding);
-	padding: var(--main-padding);
 }
 
 p.menu-item-name {
@@ -43,6 +36,7 @@ p.menu-item-name {
 	font-weight: bold;
 	font-size: 1.2em;
 	padding: .2em;
+	width: 5em;
 }
 
 div.column {
@@ -56,11 +50,11 @@ div.inner-border {
 	border: 2px solid black;	
 	background: darkgray;
 	padding: var(--main-padding);
+	padding-top: calc(var(--main-padding) * 2 + 1em);
 }
 
 p.recipe {
-	clear: right;
-	padding: 0.2em;
+	text-align: justify;
 }
 
 li:nth-child(1) p.menu-item-name{
