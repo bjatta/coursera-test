@@ -57,15 +57,15 @@ p.recipe {
 	text-align: justify;
 }
 
-li:nth-child(1) div.inner-border h3{
+div:nth-child(1).column h3{
 	background-color: DarkSalmon;
 }
 
-li:nth-child(2) div.inner-border h3{
+div:nth-child(2).column h3{
 	background-color: lightcoral;
 }
 
-li:nth-child(3) div.inner-border h3{
+div:nth-child(3).column h3{
 	background-color: Cornsilk;
 }
 
