@@ -1,5 +1,5 @@
 * {
-	--main-padding: 1em;
+	padding: 1em;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -37,25 +37,30 @@ div.inner-border h3 {
 	font-size: 1.2em;
 	padding: .2em;
 	width: 5em;
+	box-shadow: -3px 3px 6px 0px rgba(0,0,0,0.75);
 }
 
 div.column {
 	float: left;
 	border: 0;
-	padding: var(--main-padding);
+	padding: 1em;
 }
 
 div.inner-border {
  	position: relative; 
 	border: 2px solid black;	
 	background: darkgray;
-	padding: var(--main-padding);
-	padding-top: calc(var(--main-padding) * 2 + 1em);
+	padding: 1em;
+	padding-top: calc(1em * 2 + 1em);
+	box-shadow: -3px 3px 6px 0px rgba(0,0,0,0.75);
 }
 
 p.recipe {
 	text-align: justify;
+/* 	text-indent: calc(1em); */
 }
+
+
 
 div:nth-child(1).column h3{
 	background-color: DarkSalmon;
