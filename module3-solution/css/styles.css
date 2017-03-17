@@ -13,3 +13,12 @@
 	bottom: 0;
 	right: 0;
 }
+
+.pos-r {
+	position: relative;
+}
+
+.vert-middle
+{
+	padding-top: .7em;
+}
