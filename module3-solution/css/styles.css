@@ -1,0 +1,15 @@
+*{
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+.column {
+	position: relative;
+	padding-bottom: 2.6em;
+	text-align: justify;
+}
+
+.column a:nth-last-child(1) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
